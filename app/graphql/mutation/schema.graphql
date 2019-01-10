@@ -1,0 +1,17 @@
+type Mutation {
+  # Food
+  createdFood(
+    url: String!
+    address: String!
+    food_name: String!
+    des: String
+  ): Food
+  updateFood(
+    id: ID!
+    url: String
+    address: String
+    food_name: String
+    des: String
+  ): Food
+  deleteFood(id: ID!): Food
+}

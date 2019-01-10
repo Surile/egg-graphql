@@ -1,0 +1,4 @@
+type Query {
+  user(id: ID!): User
+  foods(page: Int!, per_page: Int!): [Food!]
+}
